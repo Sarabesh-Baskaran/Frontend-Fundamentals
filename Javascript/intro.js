@@ -89,4 +89,8 @@ console.log(soap); // It gives error.
 This is a block scope
 }
 
+The result will be exactly same when we use let and const inside a block. But, it is different when we use var inside a block. it does not follows block rules so the value will be printed in both inside the block and outside the block.
+
 */
+
+//Let, var, const all are function-scoped when declared inside a function.
