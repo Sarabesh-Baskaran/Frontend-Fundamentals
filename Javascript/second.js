@@ -95,3 +95,5 @@ function welcome(){
 }
 welcome(); //we can call a function using function name followed by parenthesis. It will execute the code inside the function.
 console.log(typeof welcome); //function. It is a special type of object in javascript.
+
+
