@@ -76,3 +76,46 @@ console.log(+false); //0
 //2)Unary Minus (-) - Converts a value into a number and makes it negative.
 let number = "10"
 console.log(-number); //-10
+
+//Ternary Operator (? :) - It is simple way of writing if-else condition
+//Syntax : condition ? expressionIfTrue : expressionIfFalse;
+let age = 20;
+let output = age > 18 ? "Adult" : "Children";
+console.log(output); //Adult
+
+
+//Nullish Coalescing Operator (??) - This operator returns the right hand value only when the left-hand value is null or undefined.
+let userName = null;
+let displayName = userName ?? "Sarabesh";
+console.log(displayName); //Sarabesh
+// If the left hand is not null it displays left hand side value.
+
+//Optional Chaining (?.)
+//Optional Chaining safely access properties or methods when an object might be null or undefined.
+let user = {
+    name: "Sarabesh",
+    address: {
+        city: "Chennai"
+    }
+};
+
+console.log(user?.address?.city); // Chennai
+console.log(user?.contact?.phone); // undefined
+//We will use this frequently when working with API responses and react components.
+
+//in operator used to check the property exist in object
+let users = {
+    names : "Sarabeshh",
+    age : 23
+};
+
+console.log("names" in users); //True 
+console.log("email" in users); //False
+
+//instanceof operator checks whether an object belongs to particular constructor prototype chain.
+let numbers = [10, 20, 30];
+
+console.log(numbers instanceof Array);  // true
+console.log(numbers instanceof Object); // true
+
+
